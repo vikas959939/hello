@@ -1,0 +1,37 @@
+<div class="home-img">
+    <h1 class="text-white">Taste the Authentic Chinease,<br/> Indian & <br/>Ameican Dishes</h1>
+    <br/>
+
+    <div class="mt-5">
+        <button class="btn btn-warning" (click)="filter('')" style="margin-left: 100px;">All Items</button>
+        <button class="btn btn-warning" (click)="filter('chinease')" style="margin-left: 100px;">Chinease Food</button>
+        <button class="btn btn-warning" (click)="filter('north')" style="margin-left: 100px;">North-Indian Food</button>
+        <button class="btn btn-warning" (click)="filter('South Indian')" style="margin-left: 100px;">South-Indian Food</button>
+    </div>
+    
+</div>
+
+<div class="container mt-5">
+    <div class="row">
+        <ng-container *ngFor="let item of filterCategory ">
+            
+            <div class="col-md-4 col-sm-12">
+                <div class="card" style="width: 20rem; margin-bottom: 30px;">
+                    <img class="card-img-top" src={{item.image}} alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">{{item.name}}</h5>
+                      <p >{{item.description}}</p>
+                      <a href="#" class="btn btn-primary">Buy now</a>
+                    </div>
+                    
+                  </div>
+            </div>
+            
+        </ng-container>
+    </div>
+    <div style="margin-bottom: 50px;">
+
+    </div>
+</div>
+
+

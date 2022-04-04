@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap');
+
+.home-img{
+    background-image: url('../../assets/home.jpg');
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    padding-top: 20vh;
+    font-size: 4em;
+    font-family: 'Sansita Swashed', cursive;
+}
+
